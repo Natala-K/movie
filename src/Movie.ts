@@ -1,12 +1,13 @@
-
 export class Movie {
     constructor(
-      public title: string,
-      public year: number,
-      public country: string,
-      public tagline: string,
-      public genre: string,
-      public duration: number 
+      public id: number, // Идентификатор фильма
+      public title: string, // Название фильма
+      public year: number, // Год выпуска
+      public country: string, // Страна производства
+      public tagline: string, // Слоган фильма
+      public genre: string, // Жанр
+      public duration: number, // Продолжительность в минутах
+      public price: number // Цена фильма
     ) {}
   
     getInfo(): string {
