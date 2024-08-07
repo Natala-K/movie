@@ -1,0 +1,17 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+
+configuration: Release
+
+platform:
+  - x64
+
+install:
+  - ps: Install-Product node 12
+  - npm install
+
+build_script:
+  - npm run build
+
+test_script:
+  - npm test
