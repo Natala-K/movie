@@ -8,7 +8,8 @@
     "watch": "tsc -w",
     "start": "webpack serve --mode development",
     "test": "jest",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
